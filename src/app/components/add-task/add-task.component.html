@@ -1,7 +1,7 @@
-<form class="address-form">
+<form class="address-form" (ngSubmit)="onSubmit()">
   <div class="form-control">
     <label for="text">Task</label>
-    <input type="text" id="text" [(ngModel)]="text" placeholder="add task">
+    <input type="text" id="text" [(ngModel)]="text" name="text" placeholder="add task">
   </div>
   <div class="form-control">
     <label for="day">Date and Time</label>
